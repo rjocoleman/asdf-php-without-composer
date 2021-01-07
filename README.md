@@ -1,9 +1,13 @@
-# asdf-php
+# asdf-php-without-composer
 
 [PHP](https://www.php.net) plugin for asdf version manager
 
 _Original version of this plugin created by
 [@Stratus3D](https://github.com/Stratus3D)_
+
+_This is based on [asdf-php](https://github.com/asdf-community/asdf-php) but excludes Composer_
+
+Designed to be used with [asdf-composer](https://github.com/rjocoleman/asdf-composer)
 
 ## Build History
 
@@ -39,14 +43,9 @@ PHP_WITHOUT_PEAR=yes asdf install php <version>
 Check [asdf](https://github.com/asdf-vm/asdf) readme for instructions on how to
 install & manage versions.
 
-## Global Composer Dependencies
-
-After installing a global composer package you will need to run `asdf reshim`.
-
 ### Example
 
 ```shell
-composer global require friendsofphp/php-cs-fixer
 asdf reshim
 php-cs-fixer --version
 ```
