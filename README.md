@@ -9,6 +9,12 @@ _This is based on [asdf-php](https://github.com/asdf-community/asdf-php) but exc
 
 Designed to be used with [asdf-composer](https://github.com/rjocoleman/asdf-composer)
 
+## Differences from asdf-php
+
+* Add `--with-xsl` to default
+* Support Freetype for non-Darwin OS
+* Support for applying patches prior to compile via `PHP_APPLY_PATCHES` environment variable (e.g. `PHP_APPLY_PATCHES=https://aur.archlinux.org/cgit/aur.git/plain/freetype.patch?h=php73 asdf install php 7.3.25`)
+
 ## Build History
 
 [![Build history](https://buildstats.info/github/chart/asdf-community/asdf-php?branch=master)](https://github.com/asdf-community/asdf-php/actions)
